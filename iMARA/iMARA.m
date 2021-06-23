@@ -1,12 +1,30 @@
 function [g,info] = iMARA(EEG,art_threshold)
 
+
+%  This code accompanies the paper "Using dual EEG to analyse event-locked changes in child-adult neural connectivity"
+
+% ref Marriott Haresign, Phillips, Whitehorn, Goupil, & Wass, 2021
+% contact u1434978@uel.ac.uk
+
+
+
+
 % function for automatically sorting ICA-components from infant EEG data
+
+
+
+
+
+
+
+
+
 
 % input is EEG data
 % EEG data must be within EEGlab structure and you must have already run
 % ICA see here https://sccn.ucsd.edu/wiki/Chapter_09:_Decomposing_Data_Using_ICA
 
-% art_threshold is optional - setas the threshold for probability than
+% art_threshold is optional - sets the threshold for probability than
 % component will be taken as artefact. Deafult is set at 0.9
 
 % output g is index of components that the classifier has marked as non
