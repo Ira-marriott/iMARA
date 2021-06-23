@@ -1,40 +1,30 @@
 function [g,info] = iMARA(EEG,art_threshold)
 
 
-%  This code accompanies the paper "Using dual EEG to analyse event-locked changes in child-adult neural connectivity"
+%  This code accompanies the paper "Automatic classification of ICA components from infant EEG using MARA"
 
-% ref Marriott Haresign, Phillips, Whitehorn, Goupil, & Wass, 2021
+% ref Marriott Haresign, Phillips, Whitehorn, Noreika, Jones, Leong & Wass, 2021
 % contact u1434978@uel.ac.uk
-
-
-
 
 % function for automatically sorting ICA-components from infant EEG data
 
-
-
-
-
-
-
-
-
+% call as --- [rejected_componenets,~] = iMARA(EEG)
 
 % input is EEG data
 % EEG data must be within EEGlab structure and you must have already run
 % ICA see here https://sccn.ucsd.edu/wiki/Chapter_09:_Decomposing_Data_Using_ICA
 
-% art_threshold is optional - sets the threshold for probability than
+% art_threshold is optional - setas the threshold for probability than
 % component will be taken as artefact. Deafult is set at 0.9
 
 % output g is index of components that the classifier has marked as non
 % neural/ artefact
 
-% info is a list of each components score for the six features described in
-% the accompanying paper e.g [INSERT REF]
+% info is a list of each components score for the six features described in the accompanying paper e.g 
+% Haresign, I. M., Phillips, E., Whitehorn, M., Noreika, V., Jones, E., Leong, V., & Wass, S. V. (2021). Automatic classification of ICA components from infant EEG using MARA. bioRxiv.
 
-% much of this code is adapted from code that was written by [INSERT MARA
-% REF]
+% much of this code is adapted from code that was written by 
+% Winkler, I., Haufe, S., & Tangermann, M. (2011). Automatic classification of artifactual ICA-components for artifact removal in EEG signals. Behavioral and Brain Functions, 7(1), 1-15.
 
 
 %% 
