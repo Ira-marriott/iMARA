@@ -34,6 +34,10 @@ Threshold values must range from 0 to 1
 The threshold indicates how certain the classifer is that a component contains neural activity. For example a threshold of 0.6 indicates that all components that were classified with a less that 60% likelihood of containing neural activity are marked for rejection.
 
 
+For any issues with the code or with implementing the function please contact Ira Marriott - u1434978@uel.ac.uk
+
+
+
 
 
 
